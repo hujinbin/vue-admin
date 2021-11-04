@@ -3,6 +3,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 1. 定义路由组件.
+import HelloWorld from '../page/HelloWorld.vue';
 // 也可以从其他文件导入
 const Home = { template: '<div>Home</div>' }
 const About = { template: '<div>About</div>' }
@@ -13,6 +14,7 @@ const About = { template: '<div>About</div>' }
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
+  { path: '/hello', component: HelloWorld },
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
