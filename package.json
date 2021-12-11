@@ -5,7 +5,8 @@
     "dev": "vite",
     "lint": "eslint --ext .js,.jsx,.vue,.ts,.tsx src --fix",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.16",
@@ -31,8 +32,6 @@
     "vue-tsc": "^0.3.0"
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "eslint --fix"
-    ]
+    "*.{js,jsx,vue,ts,tsx}": "eslint --cache --fix"
   }
 }
