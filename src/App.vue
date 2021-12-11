@@ -5,16 +5,23 @@
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img
+    alt="Vue logo"
+    src="./assets/logo.png"
+  >
   <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
-  <router-view></router-view>
+  <router-view />
   <div>
-    <router-link to="/">首页</router-link>
-    <router-link to="/about">关于</router-link>
-    <router-link to="/hello">hello</router-link>
+    <router-link to="/">
+      首页
+    </router-link>
+    <router-link to="/about">
+      关于
+    </router-link>
+    <router-link to="/hello">
+      hello
+    </router-link>
   </div>
-  
-  
 </template>
 
 <style>

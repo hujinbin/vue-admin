@@ -1,9 +1,8 @@
 
-
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 1. 定义路由组件.
-import HelloWorld from '../page/HelloWorld.vue';
+import HelloWorld from '../page/HelloWorld.vue'
 // 也可以从其他文件导入
 const Home = { template: '<div>Home</div>' }
 const About = { template: '<div>About</div>' }
@@ -14,7 +13,7 @@ const About = { template: '<div>About</div>' }
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
-  { path: '/hello', component: HelloWorld },
+  { path: '/hello', component: HelloWorld }
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
@@ -23,7 +22,7 @@ const routes = [
 const router = createRouter({
   // 4. 内部提供了 history 模式的实现。为了简单起见，我们在这里使用 hash 模式。
   history: createWebHashHistory(),
-  routes, // `routes: routes` 的缩写
+  routes // `routes: routes` 的缩写
 })
 
-export default router;
+export default router
