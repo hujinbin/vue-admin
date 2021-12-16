@@ -13,13 +13,10 @@
   <router-view />
   <div>
     <router-link to="/">
-      首页
+      hello world
     </router-link>
     <router-link to="/about">
       关于
-    </router-link>
-    <router-link to="/hello">
-      hello
     </router-link>
   </div>
 </template>
