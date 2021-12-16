@@ -9,7 +9,7 @@
   <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
   <router-view></router-view>
   <div>
-    <router-link to="/">hello world</router-link>
+    <router-link to="/">hello world</router-link> 
     <router-link to="/about">关于</router-link>
   </div>
   
