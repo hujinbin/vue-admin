@@ -3,7 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 1. 定义路由组件.
 import HelloWorld from '@/components/HelloWorld.vue'
-import About from '../page/About.vue'
+import About from '@/page/About.vue'
 // 也可以从其他文件导入
 
 // 2. 定义一些路由
