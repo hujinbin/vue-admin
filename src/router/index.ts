@@ -7,6 +7,7 @@ import layout from '../layout/index.vue';
 
 // 1. 定义路由组件.
 import HelloWorld from '../page/HelloWorld.vue';
+
 // 也可以从其他文件导入
 const Home = { template: '<div>Home</div>' }
 const About = { template: '<div>About</div>' }
@@ -16,15 +17,25 @@ const About = { template: '<div>About</div>' }
 // 我们后面再讨论嵌套路由。
 const routes = [
   {
-    path:'/',
-    component:layout,
-    children:[
+    path: '/',
+    component: layout,
+    children: [
       { path: '/', component: Home },
       { path: '/about', component: About },
       { path: '/hello', component: HelloWorld },
     ],
   },
-  
+  {
+    path: '/Login',
+    component: () => import('../page/Login.vue')
+  },
+  {
+    path: '/404',
+    component: () => import('../page/404.vue')
+  }, {
+    path: '/403',
+    component: () => import('../page/403.vue')
+  },
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
