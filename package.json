@@ -33,7 +33,13 @@
     "vite-plugin-eslint": "^1.3.0",
     "vue-tsc": "^0.3.0"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": "eslint --cache --fix"
+    "*.{js,jsx,vue,ts,tsx}": "eslint --fix"
   }
 }
