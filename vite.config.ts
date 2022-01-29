@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     eslintPlugin({
+      cache: false
       // 配置
     })
   ],
