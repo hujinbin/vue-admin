@@ -2,10 +2,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 基本布局
-import layout from '../layout/index.vue';
+import layout from '../layout/index.vue'
 
 // 1. 定义路由组件.
-import HelloWorld from '../page/HelloWorld.vue';
+import HelloWorld from '../page/HelloWorld.vue'
+
+import Admin from '@/page/Admin.vue'
+import About from '@/page/About.vue'
 
 // 也可以从其他文件导入
 
@@ -17,10 +20,10 @@ const routes = [
     path: '/',
     component: layout,
     children: [
-      { path: '/', component: Home },
+      { path: '/', component: Admin },
       { path: '/about', component: About },
-      { path: '/hello', component: HelloWorld },
-    ],
+      { path: '/hello', component: HelloWorld }
+    ]
   },
   {
     path: '/Login',
@@ -32,7 +35,7 @@ const routes = [
   }, {
     path: '/403',
     component: () => import('../page/403.vue')
-  },
+  }
 ]
 
 // 3. 创建路由实例并传递 `routes` 配置
